@@ -1,0 +1,74 @@
+PROGRAMA MATRICES#
+
+FLOTANTE filas,columnas,i,j,valor,temporal#
+FLOTANTE matriz1[3][3],matriz2[3][3],matriz3[3][3]#
+FLOTANTE ARREGLO[20]#
+
+FUNCION teclea_matriz1:
+i=0;
+j=0;
+MIENTRAS i<=filas
+
+	MIENTRAS j<=columnas
+	ESCRIBIR %Teclea un valor%;
+	LEER valor;
+	matriz1[i][j]=valor;
+	j=j+1;
+	FIN_MIENTRAS
+i=i+1;
+FIN_MIENTRAS
+FINFUNC
+
+FUNCION teclea_matriz2:
+j=0;
+i=0;
+MIENTRAS i<=filas
+
+	MIENTRAS j<=columnas
+	ESCRIBIR %Teclea un valor%;
+	LEER valor;
+	matriz2[i][j]=valor;
+	j=j+1;
+	FIN_MIENTRAS
+i=i+1;
+FIN_MIENTRAS
+FINFUNC
+
+FUNCION suma_matrices:
+j=0;
+i=0;
+MIENTRAS i<=filas
+	
+	MIENTRAS j<=columnas 
+	matriz3[i][j] = matriz1[i][j] + matriz2[i][j];
+	j=j+1;
+	FIN_MIENTRAS
+i=i+1;
+FIN_MIENTRAS
+FINFUNC
+
+FUNCION escribe_matriz3:
+j=0;
+i=0;
+MIENTRAS i<=filas
+	MIENTRAS j<=columnas
+	ESCRIBIR matriz3[i][j];
+	ESCRIBIR % %;
+	j=j+1;
+	FIN_MIENTRAS
+i=i+1;
+FIN_MIENTRAS
+FINFUNC
+
+INICIO
+
+ESCRIBIR %Teclea las filas de las matrices%;
+LEER filas;
+ESCRIBIR %Teclea las columnas de la matrices%;
+LEER columnas;
+LLAMAR teclea_matriz1;
+LLAMAR teclea_matriz2;
+LLAMAR suma_matrices;
+LLAMAR escribe_matriz3;
+
+FIN

@@ -1,0 +1,54 @@
+PROGRAMA MATRICES#
+FLOTANTE filas,columnas,i,j,valor,x,A,B#
+FLOTANTE arreglo[30],arr2[23],arr3[6]#
+FLOTANTE matriz[5][5]#
+INICIO
+columnas=5;
+i=3+22;
+j=3;
+i=j;
+j=arreglo[i];
+i=4;
+j=matriz[4][i];
+j=5+i;
+i=j-2;
+i=2*3/2;
+arreglo[i]=i;
+arreglo[4]=arreglo[3];
+
+SI i<j
+	filas=0;
+	columnas=6;
+	valor=5;
+SINO
+	filas=1;
+	valor=5;
+	valor=0;
+FIN_SI
+MIENTRAS j/2 <= columnas+2 !! i>j
+ MIENTRAS i+1<columnas+3
+	ESCRIBIR %Teclea un valor%;
+	ESCRIBIR filas;
+	i=4;
+	ESCRIBIR arreglo[4];
+	ESCRIBIR arreglo[i];
+	matriz[i][5]=65;
+	ESCRIBIR matriz[i][5];
+	LEER valor;
+	ESCRIBIR valor;
+	LEER arreglo[0];
+	LEER arreglo[i];
+	LEER matriz[5][i];
+	matriz1[i][j]=valor;
+	j=j+1;
+	x=j+i;
+	arreglo[x]= arreglo[3]+1*matriz[i][1];
+	matriz[1][2]= arreglo[3]+1*matriz[1][i];
+ FIN_MIENTRAS
+FIN_MIENTRAS
+
+SI A<B && i<j
+	filas=0;
+	filas=1;
+FIN_SI
+FIN
